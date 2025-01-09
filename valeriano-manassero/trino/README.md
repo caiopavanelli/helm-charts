@@ -1,6 +1,6 @@
 # trino
 
-![Version: 10.2.0](https://img.shields.io/badge/Version-10.2.0-informational?style=flat-square) ![AppVersion: 433](https://img.shields.io/badge/AppVersion-433-informational?style=flat-square)
+![Version: 10.3.0](https://img.shields.io/badge/Version-10.3.0-informational?style=flat-square) ![AppVersion: 433](https://img.shields.io/badge/AppVersion-433-informational?style=flat-square)
 
 High performance, distributed SQL query engine for big data
 
@@ -116,6 +116,7 @@ Kubernetes: `>= 1.24.0-0 < 1.31.0-0`
 | initKeystore.image.tag | int | `17` |  |
 | jmxExporter.coordinator.enabled | bool | `false` |  |
 | jmxExporter.downloadLink | string | `"https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.17.2/jmx_prometheus_javaagent-0.17.2.jar"` |  |
+| jmxExporter.extraMetrics | object | `{}` |  |
 | jmxExporter.image.pullPolicy | string | `"IfNotPresent"` |  |
 | jmxExporter.image.repository | string | `"curlimages/curl"` |  |
 | jmxExporter.image.tag | string | `"7.87.0"` |  |
