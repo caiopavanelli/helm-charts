@@ -60,4 +60,8 @@ data:
     - pattern : trino.execution<name=QueryManager><>UserErrorFailures.OneMinute.Count
       name: trino_failed_queries_user
 
+{{- if .Values.jmxExporter.extraMetrics }}
+{{ .Values.jmxExporter.extraMetrics | indent 4 }}
+{{ - end }}
+
 {{- end }}
